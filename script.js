@@ -33,10 +33,12 @@
     { p: 'Qual o valor médio por pessoa?', r: 'Visitantes relatam algo entre R$ 40 e R$ 80 por pessoa, dependendo do que se pede. Cardápio caseiro, sem couvert.' }
   ];
 
-  /* ---------- NAVBAR + MENU MOBILE ---------- */
+  /* ---------- NAVBAR + MENU MOBILE (Drawer) ---------- */
   const nav = $('#nav');
   const burger = $('#burger');
-  const menu = $('#mobileMenu');
+  const drawer = $('#mobileMenu');
+  const drawerOverlay = $('#drawerOverlay');
+  const drawerClose = $('#drawerClose');
 
   const aoRolar = () => {
     nav.classList.toggle('is-scrolled', window.scrollY > 80);
@@ -44,16 +46,28 @@
   };
   window.addEventListener('scroll', aoRolar, { passive: true });
 
+  const abrirDrawer = () => {
+    drawer.classList.add('is-open');
+    drawerOverlay.classList.add('is-open');
+    document.body.classList.add('no-scroll');
+    burger.setAttribute('aria-expanded', 'true');
+  };
+  const fecharDrawer = () => {
+    drawer.classList.remove('is-open');
+    drawerOverlay.classList.remove('is-open');
+    document.body.classList.remove('no-scroll');
+    burger.setAttribute('aria-expanded', 'false');
+  };
+
   burger.addEventListener('click', () => {
-    const aberto = menu.classList.toggle('is-open');
-    burger.setAttribute('aria-expanded', String(aberto));
+    drawer.classList.contains('is-open') ? fecharDrawer() : abrirDrawer();
   });
-  $$('#mobileMenu a').forEach((a) =>
-    a.addEventListener('click', () => {
-      menu.classList.remove('is-open');
-      burger.setAttribute('aria-expanded', 'false');
-    })
-  );
+  drawerClose.addEventListener('click', fecharDrawer);
+  drawerOverlay.addEventListener('click', fecharDrawer);
+  $$('#mobileMenu a').forEach((a) => a.addEventListener('click', fecharDrawer));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') fecharDrawer();
+  });
 
   /* ---------- ENTRADA DO HERO ---------- */
   window.addEventListener('load', () => {
