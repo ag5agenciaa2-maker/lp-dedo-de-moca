@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dedo de Moça Café da Roça — Cafeteria ao ar livre em Campo Grande, RJ</title>
+<meta name="description" content="Café coado, comida caseira e um teto de guarda-chuvas coloridos em Rio da Prata, Campo Grande/RJ. Todos os dias das 7h às 19h." />
+<link rel="icon" href="assets/favicon.ico" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Karla:wght@400;600;700&family=Caprasimo&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#inicio"><img src="assets/logo.webp" alt="Dedo de Moça Café da Roça" id="navLogo" /></a>
+  <nav class="nav__right">
+    <div class="nav__links" id="navLinks">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#espaco">O espaço</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#localizacao">Onde estamos</a>
+    </div>
+    <a class="btn btn--primary btn--sm" href="https://wa.me/5521983866213" target="_blank" rel="noopener">Chamar no zap</a>
+    <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#cardapio">Cardápio</a>
+  <a href="#espaco">O espaço</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#avaliacoes">Avaliações</a>
+  <a href="#faq">Dúvidas</a>
+  <a href="#localizacao">Onde estamos</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <span class="confete confete--1"></span>
+  <span class="confete confete--2"></span>
+  <span class="confete confete--3"></span>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="kicker kicker--verde">Rio da Prata · Campo Grande · RJ</p>
+      <h1 class="hero__title">
+        <span class="line-wrap"><span class="line">Um fim de semana</span></span>
+        <span class="line-wrap"><span class="line"><span class="mask-word"><span class="mask-word__bg"></span><span class="mask-word__txt">na roça</span></span> sem sair do Rio</span></span>
+      </h1>
+      <p class="hero__sub">Café coado, comida caseira e um teto de guarda-chuvas coloridos. Aquele cheirinho de casa de vó, servido de manhã cedo até o fim da tarde — todo santo dia.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#cardapio">Ver o cardápio</a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada+do+Viegas,+80+-+Rio+da+Prata,+Campo+Grande+-+RJ,+23017-370" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+      <div class="hero__facts">
+        <span>⏰ Todos os dias, 7h às 19h</span><span class="dot">·</span><span>⭐ 4,7 no Google</span>
+      </div>
+    </div>
+    <div class="hero__media-wrap">
+      <div class="hero__media" id="heroMedia">
+        <!-- Substituir pelo vídeo oficial quando disponível:
+        <video src="assets/DEDO_D_1.MP4" poster="assets/portal.webp" autoplay muted loop playsinline preload="metadata"></video> -->
+        <img src="assets/portal.webp" alt="Portal de entrada do Dedo de Moça Café da Roça" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE DE PALAVRAS -->
+<div class="wordbar">
+  <div class="wordbar__track">
+    <span>CAFÉ COADO ☕ PÃO DE QUEIJO 🌿 CHEIRINHO DE CASA DE VÓ ☕ RIO DA PRATA 🌿 CAMPO GRANDE ☕ TODOS OS DIAS 7h–19h 🌿&nbsp;</span>
+    <span>CAFÉ COADO ☕ PÃO DE QUEIJO 🌿 CHEIRINHO DE CASA DE VÓ ☕ RIO DA PRATA 🌿 CAMPO GRANDE ☕ TODOS OS DIAS 7h–19h 🌿&nbsp;</span>
+  </div>
+</div>
+
+<!-- DOR E SOLUÇÃO -->
+<section class="dor">
+  <div class="dor__inner">
+    <div class="dor__head">
+      <p class="kicker kicker--vermelho">O domingo de sempre</p>
+      <h2 class="h2" data-reveal>Café da manhã bom não devia ser tão difícil de achar.</h2>
+    </div>
+    <div class="dor__cards">
+      <div class="dor__card" data-reveal>Fila na porta, mesa colada na outra, ar-condicionado gelado e um café que sai frio.</div>
+      <div class="dor__card dor__card--tilt" data-reveal>Preço de brunch gourmet para comer o que a sua avó fazia melhor.</div>
+      <div class="dor__card dor__card--solid" data-reveal>Aqui é o contrário: pátio de terra batida, banco de tronco, rede na sombra, coador de pano e comida feita na hora. Você chega, senta e o tempo passa devagar.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CARDÁPIO / BENTO -->
+<section class="cardapio" id="cardapio">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker kicker--verde">Nossas delícias</p>
+        <h2 class="h2">Comida de roça,<br />o dia inteiro</h2>
+      </div>
+      <p class="sec-head__p">Do café das sete ao lanche das seis. Tudo feito na cozinha da casa, sem pressa e sem frescura.</p>
+    </div>
+
+    <div class="bento">
+      <article class="bento__card bento__card--a" data-reveal>
+        <img src="assets/mesa-cafe.webp" alt="Mesa de café da manhã com café coado, bolo e pão" />
+        <span class="scrim"></span>
+        <span class="selo selo--amarelo" data-selo>1</span>
+        <div class="bento__body">
+          <h3>A mesa do café da manhã</h3>
+          <p>Café coado na hora, ovos mexidos, pão na chapa, bolo de laranja, suco da fruta e chocolate quente com canela.</p>
+        </div>
+      </article>
+
+      <article class="bento__card bento__card--b" data-reveal>
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&amp;q=70&amp;auto=format" alt="Café coado" loading="lazy" />
+        <span class="scrim"></span>
+        <span class="selo selo--verde selo--sm" data-selo>2</span>
+        <div class="bento__body"><h3 class="h3--sm">Café coado no pano</h3></div>
+      </article>
+
+      <article class="bento__card bento__card--c" data-reveal>
+        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=800&amp;q=70&amp;auto=format" alt="Waffle com frutas" loading="lazy" />
+        <span class="scrim"></span>
+        <span class="selo selo--vermelho selo--sm" data-selo>3</span>
+        <div class="bento__body">
+          <h3 class="h3--md">Waffle da casa</h3>
+          <p>Com Nutella e morango — o mais pedido dos visitantes.</p>
+        </div>
+      </article>
+
+      <article class="bento__card bento__card--d" data-reveal>
+        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&amp;q=70&amp;auto=format" alt="Pães e salgados" loading="lazy" />
+        <span class="scrim"></span>
+        <span class="selo selo--laranja selo--sm" data-selo>4</span>
+        <div class="bento__body"><h3 class="h3--sm">Pão de queijo &amp; salgados</h3></div>
+      </article>
+
+      <article class="bento__card bento__card--e" data-reveal>
+        <span class="selo selo--amarelo selo--right" data-selo>5</span>
+        <h3 class="display">Cuscuz, aipim,<br />bolinho de chuva</h3>
+        <p>A parte da roça que quase ninguém serve mais na cidade. Sai quentinho, direto do fogão.</p>
+      </article>
+
+      <article class="bento__card bento__card--f" data-reveal>
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1000&amp;q=70&amp;auto=format" alt="Cappuccino da casa" loading="lazy" />
+        <span class="scrim scrim--side"></span>
+        <span class="selo selo--verde selo--sm" data-selo>6</span>
+        <div class="bento__body bento__body--side">
+          <h3 class="h3--md">Baguete de linguiça mineira</h3>
+          <p>Com cappuccino da casa ou chocolate quente com marshmallow.</p>
+        </div>
+      </article>
+    </div>
+    <p class="nota">Cardápio completo e valores no WhatsApp — o menu muda conforme o que a horta e o dia pedem.</p>
+  </div>
+</section>
+
+<!-- ESPAÇO -->
+<section class="espaco" id="espaco">
+  <div class="wrap">
+    <div class="espaco__head">
+      <p class="kicker kicker--vermelho">O espaço</p>
+      <h2 class="h2">Um teto de guarda-chuvas coloridos</h2>
+      <p>Quiosques de sapê, mesas de tronco, rede na sombra, chita por toda parte e luzinha acesa quando o sol cai. Todo mundo sai daqui com foto.</p>
+    </div>
+    <div class="espaco__grid">
+      <figure class="espaco__fig espaco__fig--tall" data-reveal data-parallax="0.06">
+        <img src="assets/patio-noite.webp" alt="Pátio à noite sob guarda-chuvas coloridos" loading="lazy" />
+      </figure>
+      <div class="espaco__col">
+        <figure class="espaco__fig espaco__fig--short" data-reveal data-parallax="-0.05">
+          <img src="assets/portal.webp" alt="Portal de madeira na entrada" loading="lazy" />
+        </figure>
+        <div class="espaco__stat" data-reveal>
+          <p class="display">101 mil</p>
+          <p>seguidores no Instagram — e um perfil verificado que nasceu de boca em boca.</p>
+        </div>
+      </div>
+      <figure class="espaco__fig espaco__fig--mid" data-reveal data-parallax="0.08">
+        <img src="assets/mesa-cafe.webp" alt="Mesa posta com café e comidas" loading="lazy" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <img class="sobre__foto" id="sobreFoto" src="assets/portal.webp" alt="Placa entalhada Dedo de Moça Café da Roça no portal de entrada" loading="lazy" />
+  <span class="sobre__scrim"></span>
+  <div class="sobre__card" id="sobreCard">
+    <p class="kicker kicker--verde">Sobre a casa</p>
+    <h2>O nome está entalhado na madeira da entrada</h2>
+    <p>Você atravessa o portão vermelho, pisa no caminho de pedra e o barulho da cidade some. É um pedaço de roça em plena Zona Oeste — feito à mão, peça por peça, por quem mora aqui.</p>
+    <p>Café da manhã, lanche e comida caseira o dia inteiro, todos os dias, inclusive feriado.</p>
+  </div>
+  <div class="sobre__selo">Todos os dias<br />7h às 19h</div>
+</section>
+
+<!-- AVALIAÇÕES GOOGLE -->
+<section class="google" id="avaliacoes">
+  <div class="google__inner" id="googleBloco">
+    <div class="google__nota">
+      <div class="nota-num" id="notaNum">0,0</div>
+      <div class="estrelas">
+        <span data-star>★</span><span data-star>★</span><span data-star>★</span><span data-star>★</span><span data-star>★</span>
+      </div>
+      <p class="google__label">
+        <span style="color:#4285F4">G</span><span style="color:#DB4437">o</span><span style="color:#F4B400">o</span><span style="color:#4285F4">g</span><span style="color:#0F9D58">l</span><span style="color:#DB4437">e</span> · nota média dos visitantes
+      </p>
+    </div>
+    <div class="google__txt">
+      <h2>Quem vem uma vez, volta trazendo gente</h2>
+      <p>A comida farta, o preço honesto e o atendimento são o que mais aparece nas avaliações. E a Milagros é citada pelo nome.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="depo" id="depoimentos">
+  <div class="depo__row depo__row--1" id="depoRow1"></div>
+  <div class="depo__row depo__row--2" id="depoRow2"></div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="faq__inner">
+    <div class="faq__head">
+      <p class="kicker kicker--verde">Dúvidas</p>
+      <h2 class="h2">Antes de pegar a estrada</h2>
+    </div>
+    <div class="faq__list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section class="local" id="localizacao">
+  <div class="local__grid">
+    <div>
+      <p class="kicker kicker--vermelho">Onde estamos</p>
+      <h2 class="h2">Estrada do Viegas, 80</h2>
+      <p class="local__p">Rio da Prata · Campo Grande · Rio de Janeiro/RJ · CEP 23017-370. Estacionamento gratuito na rua — chegue cedo nos fins de semana.</p>
+      <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada+do+Viegas,+80+-+Rio+da+Prata,+Campo+Grande+-+RJ,+23017-370" target="_blank" rel="noopener">Como chegar</a>
+      <div class="local__contatos">
+        <a href="https://wa.me/5521983866213" target="_blank" rel="noopener">💬 WhatsApp (21) 98386-6213</a>
+        <a href="https://www.instagram.com/dedodemoca.daroca/" target="_blank" rel="noopener">📷 @dedodemoca.daroca</a>
+        <a href="https://linktr.ee/dedodemocacafedaroca" target="_blank" rel="noopener">🔗 Linktree</a>
+        <span>⏰ Todos os dias, 7h às 19h</span>
+      </div>
+    </div>
+    <div class="local__mapa">
+      <iframe title="Mapa Dedo de Moça Café da Roça" src="https://www.google.com/maps?q=Estrada+do+Viegas,+80+-+Rio+da+Prata,+Campo+Grande+-+RJ,+23017-370&amp;output=embed" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CTA + FORM -->
+<section class="cta" id="contato">
+  <div class="cta__grid">
+    <div>
+      <p class="kicker kicker--amarelo">Vem tomar um café</p>
+      <h2>Aniversário, grupo grande ou só uma dúvida?</h2>
+      <p class="cta__p">Deixe seu recado que a gente responde no WhatsApp. Para grupos acima de 10 pessoas, avise com antecedência.</p>
+    </div>
+    <form class="form" id="form" novalidate>
+      <label>Nome
+        <input type="text" name="nome" id="nome" placeholder="Como te chamamos?" />
+      </label>
+      <span class="erro" id="erroNome"></span>
+      <label>Telefone
+        <input type="tel" name="telefone" id="telefone" placeholder="(21) 90000-0000" inputmode="numeric" />
+      </label>
+      <span class="erro" id="erroTelefone"></span>
+      <label>Mensagem
+        <textarea name="mensagem" id="mensagem" rows="4" placeholder="Conte o que você precisa"></textarea>
+      </label>
+      <span class="erro" id="erroMensagem"></span>
+      <button class="btn btn--primary" type="submit">Enviar recado</button>
+      <p class="sucesso" id="sucesso">Recebemos! Respondemos pelo WhatsApp em breve. ☕</p>
+    </form>
+  </div>
+</section>
+
+<footer class="rodape">
+  <div class="rodape__grid">
+    <div>
+      <img class="rodape__logo" src="assets/logo-circulo.webp" alt="Dedo de Moça Café da Roça" />
+      <p class="rodape__sobre">Cafeteria ao ar livre em Rio da Prata. Comida caseira, café coado e um teto de guarda-chuvas coloridos.</p>
+    </div>
+    <div>
+      <p class="rodape__tit">Contato</p>
+      <div class="rodape__links">
+        <!-- TODO: substituir "#" pela URL direta do perfil no Google Business -->
+        <a href="#">📍 Dedo de Moça café da roça</a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada+do+Viegas,+80+-+Rio+da+Prata,+Campo+Grande+-+RJ,+23017-370" target="_blank" rel="noopener">🗺️ Estrada do Viegas, 80 — Campo Grande/RJ</a>
+        <a href="https://wa.me/5521983866213" target="_blank" rel="noopener">💬 (21) 98386-6213</a>
+        <a href="https://www.instagram.com/dedodemoca.daroca/" target="_blank" rel="noopener">📷 @dedodemoca.daroca</a>
+        <a href="https://linktr.ee/dedodemocacafedaroca" target="_blank" rel="noopener">🔗 linktr.ee/dedodemocacafedaroca</a>
+      </div>
+    </div>
+    <div>
+      <p class="rodape__tit">Navegue</p>
+      <div class="rodape__links">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#espaco">O espaço</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#localizacao">Onde estamos</a>
+      </div>
+    </div>
+    <div>
+      <p class="rodape__tit">Horário</p>
+      <p>Todos os dias<br />7h às 19h — inclusive feriados</p>
+      <p class="rodape__obs">Estacionamento gratuito na rua</p>
+    </div>
+  </div>
+  <div class="creditos">
+    <span>© Dedo de Moça café da roça 2026</span>
+    <span>Desenvolvido por <a class="ag5" href="https://www.ag5agencia.com.br" target="_blank" rel="noopener">AG5</a> Agência</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
