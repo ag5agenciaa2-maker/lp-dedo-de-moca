@@ -282,7 +282,8 @@ a:hover{color:var(--vermelho-cereja)}
 .rodape{background:var(--marrom-escuro);color:var(--areia);padding:clamp(60px,7vw,90px) var(--sec-x) 0}
 .rodape__grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px;padding-bottom:50px}
 .rodape__logo{width:120px;border-radius:50%;margin-bottom:18px}
-.rodape__sobre{margin:0;line-height:1.6;max-width:300px;color:var(--caramelo)}
+.rodape__sobre{margin:0 0 18px;line-height:1.6;max-width:300px;color:var(--caramelo)}
+.rodape__social{display:flex;flex-direction:column;gap:11px}
 .rodape__tit{font-family:var(--font-tit);font-weight:900;font-size:1.3rem;color:var(--amarelo-milho);margin:0 0 16px}
 .rodape__links{display:flex;flex-direction:column;gap:11px}
 .rodape a{color:var(--areia)}
@@ -291,6 +292,8 @@ a:hover{color:var(--vermelho-cereja)}
 .creditos{max-width:1280px;margin:0 auto;border-top:1px solid rgba(237,227,212,.18);padding:22px 0 26px;
   display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.92rem;color:var(--caramelo)}
 .ag5{background:var(--amarelo-milho);color:var(--marrom-cacau);padding:2px 8px;border-radius:6px;font-weight:700}
+.footer-legal-links a{transition:opacity .2s ease}
+.footer-legal-links a:hover{opacity:1}
 
 /* ---------- reveals ---------- */
 [data-reveal]{opacity:0;transform:translateY(48px) scale(.97);will-change:transform,opacity;

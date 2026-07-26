@@ -242,8 +242,14 @@
     const ok = Object.values(erros).every((v) => !v);
     $('#sucesso').classList.toggle('is-visible', ok);
     if (ok) {
+      // ▼ MENSAGEM OBRIGATÓRIA — estrutura fixa (padrão AG5) ▼
+      let texto = `Olá, me chamo ${nome}, vim através do site e gostaria de uma informação.\n`;
+      texto += `\n- Telefone: ${tel.value}`;
+      texto += `\n- Mensagem: ${msg}`;
+      // ▲ ────────────────────────────────────────────────── ▲
+      const urlWhatsApp = `https://wa.me/5521983866213?text=${encodeURIComponent(texto)}`;
+      window.open(urlWhatsApp, '_blank', 'noopener,noreferrer');
       form.reset();
-      // Integração de envio (WhatsApp API, e-mail ou CRM) entra aqui.
     }
   });
 
