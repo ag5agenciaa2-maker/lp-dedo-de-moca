@@ -765,6 +765,8 @@ a:hover{color:var(--vermelho-cereja)}
 .rodape__social svg,.rodape__links svg{flex-shrink:0}
 .rodape__tit{font-family:var(--font-tit);font-weight:900;font-size:1.3rem;color:var(--amarelo-milho);margin:0 0 16px}
 .rodape__links{display:flex;flex-direction:column;gap:11px;max-width:210px}
+.rodape__links--contato{max-width:none}
+.rodape__links--contato a{white-space:nowrap}
 .rodape__links--delicias{max-width:none;white-space:nowrap}
 .rodape a{color:var(--areia)}
 .rodape a:hover{color:var(--amarelo-milho)}
