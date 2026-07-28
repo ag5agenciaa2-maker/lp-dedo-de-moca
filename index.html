@@ -31,9 +31,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Karla:wght@400;600;700&family=Caprasimo&display=swap" rel="stylesheet" />
+<link rel="preload" as="image" fetchpriority="high" href="assets/dedo-de-moca-guarda-chuvas-coloridos-noite.webp" />
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="cookie-banner.css" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Karla:wght@400;600;700&family=Caprasimo&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Karla:wght@400;600;700&family=Caprasimo&display=swap" /></noscript>
 
 <script type="application/ld+json">
 {
@@ -179,7 +181,7 @@
 
 <header class="nav" id="nav">
   <div class="nav__pill">
-    <a class="nav__logo" href="#inicio"><img src="assets/logo-dedo-de-moca-desktop.webp" alt="Dedo de Moça Café da Roça" id="navLogo" /></a>
+    <a class="nav__logo" href="#inicio"><img src="assets/logo-dedo-de-moca-desktop.webp" alt="Dedo de Moça Café da Roça" id="navLogo" width="400" height="400" /></a>
     <span class="nav__divider" aria-hidden="true"></span>
     <nav class="nav__right">
       <div class="nav__links" id="navLinks">
@@ -189,7 +191,7 @@
         <a href="#depoimentos">Depoimentos</a>
         <a href="#contato">Contato</a>
       </div>
-      <a class="btn btn--primary btn--sm" href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20fazer%20uma%20reserva%20ou%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <a class="btn btn--primary btn--sm" href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20fazer%20uma%20reserva%20ou%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
       <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
     </nav>
   </div>
@@ -198,7 +200,7 @@
 <main>
 <!-- HERO -->
 <section class="hero" id="inicio">
-  <img class="hero__bg" src="assets/dedo-de-moca-guarda-chuvas-coloridos-noite.webp" alt="" aria-hidden="true" loading="eager" />
+  <img class="hero__bg" src="assets/dedo-de-moca-guarda-chuvas-coloridos-noite.webp" alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="960" height="1280" />
   <div class="hero__scrim"></div>
   <div class="hero__inner">
     <div class="hero__text">
@@ -211,7 +213,7 @@
       <p class="hero__sub">Café coado, comida caseira e um teto de guarda-chuvas coloridos. Aquele cheirinho de casa de vó, servido de manhã cedo até o fim da tarde.</p>
       <div class="hero__cta">
         <a class="btn btn--primary" href="#cardapio">Ver o cardápio</a>
-        <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada+do+Viegas,+80+-+Rio+da+Prata,+Campo+Grande+-+RJ,+23017-370" target="_blank" rel="noopener">Como chegar</a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada+do+Viegas,+80+-+Rio+da+Prata,+Campo+Grande+-+RJ,+23017-370" target="_blank" rel="noopener noreferrer">Como chegar</a>
       </div>
     </div>
     <div class="hero__media-wrap">
@@ -242,7 +244,7 @@
         <span class="dor__stamp dor__stamp--alert">O padrão da cidade</span>
 
         <div class="dor__problem-img-wrap">
-          <img class="dor__problem-img" src="assets/padrao-cidade-cafeteria.png" alt="Cafeteria urbana lotada com fila de pessoas no ambiente cinzento da cidade" width="700" height="240" loading="lazy" />
+          <!-- PageSpeed fix: PNG (840KB) convertido para WebP (117KB), -86% --><img class="dor__problem-img" src="assets/padrao-cidade-cafeteria.webp" alt="Cafeteria urbana lotada com fila de pessoas no ambiente cinzento da cidade" width="700" height="240" loading="lazy" />
           <div class="dor__problem-overlay"></div>
           <span class="dor__tag-pill dor__tag-pill--alert">⚠️ Fila &amp; Barulho Urbano</span>
         </div>
@@ -279,11 +281,11 @@
           
           <div class="dor__hero-features">
             <div class="dor__feature-mini">
-              <img src="assets/dedo-de-moca-guarda-chuvas-coloridos-rua.webp" alt="Pátio ao ar livre sob guarda-chuvas coloridos" loading="lazy" />
+              <img src="assets/dedo-de-moca-guarda-chuvas-coloridos-rua.webp" alt="Pátio ao ar livre sob guarda-chuvas coloridos" loading="lazy" width="960" height="1280" />
               <span>Pátio ao ar livre sob os guarda-chuvas</span>
             </div>
             <div class="dor__feature-mini">
-              <img src="assets/dedo-de-moca-cafe-coado-bolinho-chuva-mesa.webp" alt="Receitas caseiras de família com bolo e café" loading="lazy" />
+              <img src="assets/dedo-de-moca-cafe-coado-bolinho-chuva-mesa.webp" alt="Receitas caseiras de família com bolo e café" loading="lazy" width="960" height="1280" />
               <span>Receitas caseiras de família</span>
             </div>
           </div>
@@ -306,7 +308,7 @@
 
     <div class="bento">
       <article class="bento__card bento__card--a" data-reveal>
-        <img style="object-position:50% 42%" src="assets/dedo-de-moca-mesa-completa-cafe-da-manha.webp" alt="Mesa de café da manhã com café coado, bolo e pão" />
+        <img style="object-position:50% 42%" src="assets/dedo-de-moca-mesa-completa-cafe-da-manha.webp" alt="Mesa de café da manhã com café coado, bolo e pão" width="960" height="1280" />
         <span class="scrim"></span>
         <span class="selo" data-selo>01</span>
         <div class="bento__body">
@@ -316,7 +318,7 @@
       </article>
 
       <article class="bento__card bento__card--c" data-reveal>
-        <img style="object-position:50% 40%" src="assets/dedo-de-moca-guarda-chuvas-noite-clientes-bicicleta.webp" alt="Clientes no pátio do Dedo de Moça Café da Roça, sob os guarda-chuvas coloridos à noite" loading="lazy" />
+        <img style="object-position:50% 40%" src="assets/dedo-de-moca-guarda-chuvas-noite-clientes-bicicleta.webp" alt="Clientes no pátio do Dedo de Moça Café da Roça, sob os guarda-chuvas coloridos à noite" loading="lazy" width="960" height="1280" />
         <span class="scrim"></span>
         <span class="selo selo--sm" data-selo>02</span>
         <div class="bento__body">
@@ -326,7 +328,7 @@
       </article>
 
       <article class="bento__card bento__card--b" data-reveal>
-        <img style="object-position:50% 55%" src="assets/dedo-de-moca-playground-infantil-colorido.webp" alt="Playground infantil colorido no quintal do Dedo de Moça Café da Roça" loading="lazy" />
+        <img style="object-position:50% 55%" src="assets/dedo-de-moca-playground-infantil-colorido.webp" alt="Playground infantil colorido no quintal do Dedo de Moça Café da Roça" loading="lazy" width="960" height="1280" />
         <span class="scrim"></span>
         <span class="selo selo--sm" data-selo>03</span>
         <div class="bento__body"><h3 class="h3--sm">Programa em família</h3></div>
@@ -345,19 +347,19 @@
         <h3 class="menu__cat-tit"><span>Cafés &amp; quentes</span></h3>
         <div class="menu__itens">
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-cafe-coado-cactus-mural.webp" alt="Café coado na hora" loading="lazy" />
+            <img src="assets/dedo-de-moca-cafe-coado-cactus-mural.webp" alt="Café coado na hora" loading="lazy" width="960" height="1280" />
             <figcaption>Café coado na hora</figcaption>
           </figure>
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-cappuccino-latte-art-coracao-mesa-extra.webp" alt="Cappuccino com latte art" loading="lazy" />
+            <img src="assets/dedo-de-moca-cappuccino-latte-art-coracao-mesa-extra.webp" alt="Cappuccino com latte art" loading="lazy" width="960" height="1280" />
             <figcaption>Cappuccino da casa</figcaption>
           </figure>
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-chocolate-quente-marshmallow.webp" alt="Chocolate quente com marshmallow" loading="lazy" />
+            <img src="assets/dedo-de-moca-chocolate-quente-marshmallow.webp" alt="Chocolate quente com marshmallow" loading="lazy" width="960" height="1280" />
             <figcaption>Chocolate quente com marshmallow</figcaption>
           </figure>
           <figure class="menu__item">
-            <img style="object-position:50% 35%" src="assets/dedo-de-moca-milkshake-cafe-close.webp" alt="Canjica com canela" loading="lazy" />
+            <img style="object-position:50% 35%" src="assets/dedo-de-moca-milkshake-cafe-close.webp" alt="Canjica com canela" loading="lazy" width="960" height="1280" />
             <figcaption>Canjica com canela</figcaption>
           </figure>
         </div>
@@ -367,27 +369,27 @@
         <h3 class="menu__cat-tit"><span>Doces &amp; sobremesas</span></h3>
         <div class="menu__itens">
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-bolo-chocolate-cobertura-brilhante.webp" alt="Bolo de chocolate com cobertura" loading="lazy" />
+            <img src="assets/dedo-de-moca-bolo-chocolate-cobertura-brilhante.webp" alt="Bolo de chocolate com cobertura" loading="lazy" width="960" height="1280" />
             <figcaption>Bolo de chocolate com cobertura</figcaption>
           </figure>
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-cheesecake-morango-camadas.webp" alt="Cheesecake de morango" loading="lazy" />
+            <img src="assets/dedo-de-moca-cheesecake-morango-camadas.webp" alt="Cheesecake de morango" loading="lazy" width="960" height="1280" />
             <figcaption>Cheesecake de morango</figcaption>
           </figure>
           <figure class="menu__item">
-            <img style="object-position:50% 68%" src="assets/dedo-de-moca-pudim-caramelo-fonte-noite.webp" alt="Pudim de leite caramelizado" loading="lazy" />
+            <img style="object-position:50% 68%" src="assets/dedo-de-moca-pudim-caramelo-fonte-noite.webp" alt="Pudim de leite caramelizado" loading="lazy" width="960" height="1280" />
             <figcaption>Pudim de leite caramelizado</figcaption>
           </figure>
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-fondue-chocolate-frutas-pao.webp" alt="Fondue de chocolate com frutas" loading="lazy" />
+            <img src="assets/dedo-de-moca-fondue-chocolate-frutas-pao.webp" alt="Fondue de chocolate com frutas" loading="lazy" width="960" height="1280" />
             <figcaption>Fondue de chocolate com frutas</figcaption>
           </figure>
           <figure class="menu__item">
-            <img style="object-position:50% 35%" src="assets/dedo-de-moca-bolinho-chuva-pote-love.webp" alt="Bolinhos de chuva caseiros" loading="lazy" />
+            <img style="object-position:50% 35%" src="assets/dedo-de-moca-bolinho-chuva-pote-love.webp" alt="Bolinhos de chuva caseiros" loading="lazy" width="960" height="1280" />
             <figcaption>Bolinhos de chuva caseiros</figcaption>
           </figure>
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-torta-chocolate-coco-ralado.webp" alt="Torta de chocolate com coco" loading="lazy" />
+            <img src="assets/dedo-de-moca-torta-chocolate-coco-ralado.webp" alt="Torta de chocolate com coco" loading="lazy" width="960" height="1280" />
             <figcaption>Torta de chocolate com coco</figcaption>
           </figure>
         </div>
@@ -397,15 +399,15 @@
         <h3 class="menu__cat-tit"><span>Salgados</span></h3>
         <div class="menu__itens">
           <figure class="menu__item">
-            <img style="object-position:50% 30%" src="assets/dedo-de-moca-pao-queijo-bacon-crocante-extra.webp" alt="Pão com queijo e bacon" loading="lazy" />
+            <img style="object-position:50% 30%" src="assets/dedo-de-moca-pao-queijo-bacon-crocante-extra.webp" alt="Pão com queijo e bacon" loading="lazy" width="960" height="1280" />
             <figcaption>Pão na chapa com queijo e bacon</figcaption>
           </figure>
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-pizza-baguete-queijo-tomate.webp" alt="Baguete gratinada com tomate" loading="lazy" />
+            <img src="assets/dedo-de-moca-pizza-baguete-queijo-tomate.webp" alt="Baguete gratinada com tomate" loading="lazy" width="960" height="1280" />
             <figcaption>Baguete gratinada com tomate</figcaption>
           </figure>
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-cuscuz-queijo-derretido-mural.webp" alt="Cuscuz com queijo derretido" loading="lazy" />
+            <img src="assets/dedo-de-moca-cuscuz-queijo-derretido-mural.webp" alt="Cuscuz com queijo derretido" loading="lazy" width="960" height="1280" />
             <figcaption>Cuscuz com queijo derretido</figcaption>
           </figure>
         </div>
@@ -415,19 +417,19 @@
         <h3 class="menu__cat-tit"><span>Sucos &amp; gelados</span></h3>
         <div class="menu__itens">
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-limonada-suco-verde.webp" alt="Limonada suíça" loading="lazy" />
+            <img src="assets/dedo-de-moca-limonada-suco-verde.webp" alt="Limonada suíça" loading="lazy" width="960" height="1280" />
             <figcaption>Limonada suíça</figcaption>
           </figure>
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-suco-acai-uva-limao.webp" alt="Suco de uva com limão" loading="lazy" />
+            <img src="assets/dedo-de-moca-suco-acai-uva-limao.webp" alt="Suco de uva com limão" loading="lazy" width="960" height="1280" />
             <figcaption>Suco de uva com limão</figcaption>
           </figure>
           <figure class="menu__item">
-            <img src="assets/dedo-de-moca-milkshake-cafe-taca.webp" alt="Milkshake de café" loading="lazy" />
+            <img src="assets/dedo-de-moca-milkshake-cafe-taca.webp" alt="Milkshake de café" loading="lazy" width="960" height="1280" />
             <figcaption>Milkshake de café</figcaption>
           </figure>
           <figure class="menu__item">
-            <img style="object-position:50% 40%" src="assets/dedo-de-moca-acai-morango-banana-granola.webp" alt="Açaí com frutas e granola" loading="lazy" />
+            <img style="object-position:50% 40%" src="assets/dedo-de-moca-acai-morango-banana-granola.webp" alt="Açaí com frutas e granola" loading="lazy" width="960" height="1280" />
             <figcaption>Açaí com frutas e granola</figcaption>
           </figure>
         </div>
@@ -456,16 +458,16 @@
       <h2>O nome está entalhado na madeira da entrada</h2>
       <div class="sobre__media sobre__media--mobile" data-reveal>
         <div class="sobre__moldura">
-          <img class="sobre__foto" src="assets/dedo-de-moca-portal-entrada-placa-madeira.webp" alt="Portal de entrada do Dedo de Moça Café da Roça, com placa entalhada na madeira" loading="lazy" />
+          <img class="sobre__foto" src="assets/dedo-de-moca-portal-entrada-placa-madeira.webp" alt="Portal de entrada do Dedo de Moça Café da Roça, com placa entalhada na madeira" loading="lazy" width="965" height="1630" />
         </div>
         <div class="sobre__moldura sobre__moldura--2">
-          <img class="sobre__foto" src="assets/dedo-de-moca-quiosque-sape-guarda-chuvas-noite.webp" alt="Quiosque coberto de sapê do Dedo de Moça Café da Roça, iluminado ao entardecer" loading="lazy" />
+          <img class="sobre__foto" src="assets/dedo-de-moca-quiosque-sape-guarda-chuvas-noite.webp" alt="Quiosque coberto de sapê do Dedo de Moça Café da Roça, iluminado ao entardecer" loading="lazy" width="960" height="1280" />
         </div>
       </div>
       <p>Você atravessa o portão vermelho, pisa no caminho de pedra e o barulho da cidade some. É um pedaço de roça em plena Zona Oeste — feito à mão, peça por peça, por quem mora aqui.</p>
       <p>Café da manhã, lanche e comida caseira o dia inteiro, todos os dias, inclusive feriado.</p>
       <div class="sobre__acoes">
-        <a class="sobre__link" href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20conhecer%20mais%20sobre%20a%20casa." target="_blank" rel="noopener">
+        <a class="sobre__link" href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20conhecer%20mais%20sobre%20a%20casa." target="_blank" rel="noopener noreferrer">
           Vem conhecer
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -473,10 +475,10 @@
     </div>
     <div class="sobre__media sobre__media--desktop" data-reveal>
       <div class="sobre__moldura">
-        <img class="sobre__foto" id="sobreFoto" src="assets/dedo-de-moca-portal-entrada-placa-madeira.webp" alt="Portal de entrada do Dedo de Moça Café da Roça, com placa entalhada na madeira" loading="lazy" />
+        <img class="sobre__foto" id="sobreFoto" src="assets/dedo-de-moca-portal-entrada-placa-madeira.webp" alt="Portal de entrada do Dedo de Moça Café da Roça, com placa entalhada na madeira" loading="lazy" width="965" height="1630" />
       </div>
       <div class="sobre__moldura sobre__moldura--2">
-        <img class="sobre__foto" src="assets/dedo-de-moca-quiosque-sape-guarda-chuvas-noite.webp" alt="Quiosque coberto de sapê do Dedo de Moça Café da Roça, iluminado ao entardecer" loading="lazy" />
+        <img class="sobre__foto" src="assets/dedo-de-moca-quiosque-sape-guarda-chuvas-noite.webp" alt="Quiosque coberto de sapê do Dedo de Moça Café da Roça, iluminado ao entardecer" loading="lazy" width="960" height="1280" />
       </div>
     </div>
   </div>
@@ -492,26 +494,26 @@
     </div>
     <div class="espaco__grid">
       <figure class="espaco__fig espaco__fig--tall" data-reveal>
-        <img src="assets/dedo-de-moca-guarda-chuvas-coloridos-noite.webp" alt="Pátio à noite sob guarda-chuvas coloridos" loading="lazy" />
+        <img src="assets/dedo-de-moca-guarda-chuvas-coloridos-noite.webp" alt="Pátio à noite sob guarda-chuvas coloridos" loading="lazy" width="960" height="1280" />
       </figure>
       <div class="espaco__col">
         <figure class="espaco__fig espaco__fig--short" data-reveal>
-          <img src="assets/dedo-de-moca-guarda-chuvas-planta-vaso-artesanal.webp" alt="Detalhe de vaso artesanal com o pátio de guarda-chuvas coloridos ao fundo" loading="lazy" />
+          <img src="assets/dedo-de-moca-guarda-chuvas-planta-vaso-artesanal.webp" alt="Detalhe de vaso artesanal com o pátio de guarda-chuvas coloridos ao fundo" loading="lazy" width="960" height="1280" />
         </figure>
         <figure class="espaco__fig espaco__fig--short" data-reveal>
-          <img src="assets/dedo-de-moca-guarda-chuvas-noite-dup-extra.webp" alt="Caminho sob os guarda-chuvas coloridos do Dedo de Moça Café da Roça à noite" loading="lazy" />
+          <img src="assets/dedo-de-moca-guarda-chuvas-noite-dup-extra.webp" alt="Caminho sob os guarda-chuvas coloridos do Dedo de Moça Café da Roça à noite" loading="lazy" width="960" height="1280" />
         </figure>
       </div>
       <div class="espaco__col">
         <figure class="espaco__fig espaco__fig--mid" data-reveal>
-          <img src="assets/dedo-de-moca-guarda-chuvas-noite-clientes-bicicleta.webp" alt="Clientes no pátio do Dedo de Moça Café da Roça, sob os guarda-chuvas coloridos à noite" loading="lazy" />
+          <img src="assets/dedo-de-moca-guarda-chuvas-noite-clientes-bicicleta.webp" alt="Clientes no pátio do Dedo de Moça Café da Roça, sob os guarda-chuvas coloridos à noite" loading="lazy" width="960" height="1280" />
         </figure>
         <figure class="espaco__fig espaco__fig--short" data-reveal>
-          <img src="assets/dedo-de-moca-espaco-kids-arvores-cobertura.webp" alt="Área coberta de sapê vista entre a vegetação do Dedo de Moça Café da Roça" loading="lazy" />
+          <img src="assets/dedo-de-moca-espaco-kids-arvores-cobertura.webp" alt="Área coberta de sapê vista entre a vegetação do Dedo de Moça Café da Roça" loading="lazy" width="960" height="1280" />
         </figure>
       </div>
       <figure class="espaco__fig espaco__fig--tall" data-reveal>
-        <img src="assets/dedo-de-moca-guarda-chuvas-coloridos-noite-caminho.webp" alt="Caminho de entrada do Dedo de Moça Café da Roça ao entardecer, sob os guarda-chuvas coloridos" loading="lazy" />
+        <img src="assets/dedo-de-moca-guarda-chuvas-coloridos-noite-caminho.webp" alt="Caminho de entrada do Dedo de Moça Café da Roça ao entardecer, sob os guarda-chuvas coloridos" loading="lazy" width="960" height="1280" />
       </figure>
     </div>
   </div>
@@ -540,15 +542,15 @@
     <p class="kicker kicker--vermelho">Onde estamos</p>
     <h2 class="h2 local__tit">Estrada do Viegas, 80</h2>
     <p class="local__p">Rio da Prata · Campo Grande · Rio de Janeiro/RJ · CEP 23017-370. Estacionamento gratuito na rua — chegue cedo nos fins de semana.</p>
-    <a class="btn btn--primary local__cta" href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada+do+Viegas,+80+-+Rio+da+Prata,+Campo+Grande+-+RJ,+23017-370" target="_blank" rel="noopener">Como chegar</a>
+    <a class="btn btn--primary local__cta" href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada+do+Viegas,+80+-+Rio+da+Prata,+Campo+Grande+-+RJ,+23017-370" target="_blank" rel="noopener noreferrer">Como chegar</a>
     <div class="local__contatos">
-      <a href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20saber%20como%20chegar%20at%C3%A9%20a%20cafeteria." target="_blank" rel="noopener">
+      <a href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20saber%20como%20chegar%20at%C3%A9%20a%20cafeteria." target="_blank" rel="noopener noreferrer">
         <span class="local__icone">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         </span>
         (21) 98386-6213
       </a>
-      <a href="https://www.instagram.com/dedodemoca.daroca/" target="_blank" rel="noopener">
+      <a href="https://www.instagram.com/dedodemoca.daroca/" target="_blank" rel="noopener noreferrer">
         <span class="local__icone">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <rect x="2.5" y="2.5" width="19" height="19" rx="5"/>
@@ -570,7 +572,7 @@
 
 <!-- CTA + FORM -->
 <section class="cta" id="contato">
-  <img class="cta__bg" src="assets/dedo-de-moca-quiosque-sape-guarda-chuvas-noite.webp" alt="" aria-hidden="true" loading="lazy" />
+  <img class="cta__bg" src="assets/dedo-de-moca-quiosque-sape-guarda-chuvas-noite.webp" alt="" aria-hidden="true" loading="lazy" width="960" height="1280" />
   <span class="cta__confete cta__confete--1"></span>
   <span class="cta__confete cta__confete--2"></span>
   <span class="cta__confete cta__confete--3"></span>
@@ -631,10 +633,10 @@
 <footer class="rodape">
   <div class="rodape__grid">
     <div class="rodape__marca">
-      <img class="rodape__logo" src="assets/logo-dedo-de-moca-desktop-crop-outline.webp" alt="Dedo de Moça Café da Roça" />
+      <img class="rodape__logo" src="assets/logo-dedo-de-moca-desktop-crop-outline.webp" alt="Dedo de Moça Café da Roça" width="381" height="218" />
       <p class="rodape__sobre">Cafeteria ao ar livre em Rio da Prata. Comida caseira, café coado e um teto de guarda-chuvas coloridos.</p>
       <div class="rodape__social">
-        <a href="https://www.instagram.com/dedodemoca.daroca/" target="_blank" rel="noopener" aria-label="Instagram">
+        <a href="https://www.instagram.com/dedodemoca.daroca/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <rect x="2.5" y="2.5" width="19" height="19" rx="5"/>
             <circle cx="12" cy="12" r="4.2"/>
@@ -671,11 +673,11 @@
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h14v5a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8z"/><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M6 2v2M10 2v2M14 2v2"/></svg>
           <span>Dedo de Moça café da roça</span>
         </a>
-        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada+do+Viegas,+80+-+Rio+da+Prata,+Campo+Grande+-+RJ,+23017-370" target="_blank" rel="noopener">
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Estrada+do+Viegas,+80+-+Rio+da+Prata,+Campo+Grande+-+RJ,+23017-370" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 0C7.802 0 4 3.403 4 7.602 4 13.5 12 24 12 24s8-10.5 8-16.398C20 3.403 16.199 0 12 0zm0 11a3.4 3.4 0 110-6.8A3.4 3.4 0 0112 11z"/></svg>
           <span>Estrada do Viegas, 80 — Campo Grande/RJ</span>
         </a>
-        <a href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20card%C3%A1pio%20ou%20o%20funcionamento." target="_blank" rel="noopener">
+        <a href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20card%C3%A1pio%20ou%20o%20funcionamento." target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           <span>(21) 98386-6213</span>
         </a>
@@ -700,14 +702,14 @@
         <a href="/politica-de-privacidade" style="text-decoration: none; color: inherit;">Política de Privacidade</a>
       </div>
     </span>
-    <span>Desenvolvido por <a class="ag5" href="https://www.ag5agencia.com.br" target="_blank" rel="noopener">AG5 Agência</a></span>
+    <span>Desenvolvido por <a class="ag5" href="https://www.ag5agencia.com.br" target="_blank" rel="noopener noreferrer">AG5 Agência</a></span>
   </div>
 </footer>
 
 <div class="drawer-overlay" id="drawerOverlay"></div>
 <div class="drawer" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
   <div class="drawer__head">
-    <img class="drawer__logo" src="assets/logo-dedo-de-moca-desktop.webp" alt="Dedo de Moça Café da Roça" />
+    <img class="drawer__logo" src="assets/logo-dedo-de-moca-desktop.webp" alt="Dedo de Moça Café da Roça" width="400" height="400" />
     <button class="drawer__close" id="drawerClose" type="button" aria-label="Fechar menu"><span></span><span></span></button>
   </div>
   <nav class="drawer__links">
@@ -718,7 +720,7 @@
     <a href="#contato">Contato</a>
   </nav>
   <div class="drawer__foot">
-    <a class="btn btn--primary drawer__cta" href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20fazer%20uma%20reserva%20ou%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <a class="btn btn--primary drawer__cta" href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20fazer%20uma%20reserva%20ou%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
   </div>
 </div>
 

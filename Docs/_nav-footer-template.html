@@ -1,42 +1,33 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Política de Privacidade — Dedo de Moça Café da Roça</title>
-<meta name="description" content="Política de privacidade e uso de cookies do site do Dedo de Moça Café da Roça." />
-<meta name="robots" content="noindex, follow" />
-<link rel="canonical" href="http://www.dedodemoca.ag5agencia.site/politica-de-privacidade" />
-<link rel="icon" href="assets/favicon-dedo-de-moca.ico" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Karla:wght@400;600;700&family=Caprasimo&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="cookie-banner.css" />
-<style>
-  .legal{max-width:820px;margin:0 auto;padding:150px var(--sec-x) var(--sec-y)}
-  .legal h1{font-family:var(--font-tit);font-weight:900;font-size:clamp(2.2rem,4vw,3.2rem);color:var(--marrom-cacau);margin:0 0 8px}
-  .legal .legal__atualizado{font-size:.95rem;color:var(--marrom-cacau);opacity:.75;margin:0 0 40px}
-  .legal h2{font-family:var(--font-tit);font-weight:900;font-size:1.5rem;color:var(--marrom-cacau);margin:36px 0 12px}
-  .legal p,.legal li{font-size:1rem;line-height:1.65;color:var(--marrom-escuro)}
-  .legal ul{padding-left:22px;margin:12px 0}
-  .legal a{color:var(--vermelho-cereja);text-decoration:underline}
-  .legal__voltar{display:inline-block;margin-top:44px}
-</style>
-</head>
-<body>
+<!--
+  TEMPLATE CANÔNICO — Nav / Footer / Drawer / Cookie / WhatsApp Premium
+  Dedo de Moça Café da Roça — fonte de verdade: index.html
+  Gerado pela skill-rodape-padrao-nas-paginas em 28/07/2026.
 
+  Como usar:
+  - {{BASE}} = "" (vazio) para páginas na raiz do site (ex: termos-e-condicoes.html, politica-de-privacidade.html)
+  - {{BASE}} = "../" para páginas em subpasta (ex: blog/post.html) — troque também os hrefs internos
+    de âncora (#inicio, #cardapio...) por "{{BASE}}#inicio" só se a página em subpasta precisar
+    voltar pra home; se a subpágina tiver as MESMAS seções (não é o caso aqui), mantenha "#...".
+  - Todo href de âncora (#inicio, #cardapio, #sobre, #depoimentos, #contato, #espaco, #faq,
+    #localizacao) deve ser prefixado com "/" quando a página NÃO for a index (ex: "/#inicio"),
+    porque essas seções só existem na home. Nas páginas legais atuais isso já está aplicado.
+  - Nunca copiar de uma página secundária — sempre partir deste arquivo ou do index.html atual.
+-->
+
+<!-- ============================================================ -->
+<!-- NAV -->
+<!-- ============================================================ -->
 <header class="nav" id="nav">
   <div class="nav__pill">
-    <a class="nav__logo" href="/#inicio"><img src="assets/logo-dedo-de-moca-desktop.webp" alt="Dedo de Moça Café da Roça" id="navLogo" /></a>
+    <a class="nav__logo" href="{{BASE}}/#inicio"><img src="{{BASE}}assets/logo-dedo-de-moca-desktop.webp" alt="Dedo de Moça Café da Roça" id="navLogo" /></a>
     <span class="nav__divider" aria-hidden="true"></span>
     <nav class="nav__right">
       <div class="nav__links" id="navLinks">
-        <a href="/#inicio">Início</a>
-        <a href="/#cardapio">Nossas Delícias</a>
-        <a href="/#sobre">Sobre</a>
-        <a href="/#depoimentos">Depoimentos</a>
-        <a href="/#contato">Contato</a>
+        <a href="{{BASE}}/#inicio">Início</a>
+        <a href="{{BASE}}/#cardapio">Nossas Delícias</a>
+        <a href="{{BASE}}/#sobre">Sobre</a>
+        <a href="{{BASE}}/#depoimentos">Depoimentos</a>
+        <a href="{{BASE}}/#contato">Contato</a>
       </div>
       <a class="btn btn--primary btn--sm" href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20fazer%20uma%20reserva%20ou%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener">Falar no WhatsApp</a>
       <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
@@ -44,100 +35,38 @@
   </div>
 </header>
 
-<main class="legal">
-  <h1>Política de Privacidade</h1>
-  <p class="legal__atualizado">Última atualização: 25 de julho de 2026</p>
-  <p><strong>Esta política está em conformidade com a Lei Geral de Proteção de Dados — LGPD (Lei nº 13.709/2018).</strong></p>
+<!-- ============================================================ -->
+<!-- CONTEÚDO DA PÁGINA VAI AQUI -->
+<!-- ============================================================ -->
 
-  <section>
-    <h2>1. Informações que coletamos</h2>
-    <h3>1.1 Dados fornecidos diretamente</h3>
-    <p>Quando você preenche o formulário de contato do site (seção "Vem tomar um café"), coletamos os seguintes dados: <strong>nome</strong>, <strong>telefone</strong> e a <strong>mensagem</strong> que você escreve. Esses são os únicos dados solicitados ativamente pelo site.</p>
-    <h3>1.2 Dados coletados automaticamente</h3>
-    <p>Ao navegar pelo site, cookies podem registrar informações técnicas do seu acesso (como preferências de navegação), conforme detalhado na seção "Cookies" abaixo. Não utilizamos scripts de rastreamento de terceiros (como Google Analytics ou pixels de redes sociais) além do sistema de cookies próprio do site.</p>
-  </section>
-
-  <section>
-    <h2>2. Como usamos suas informações</h2>
-    <p>Os dados do formulário de contato são usados exclusivamente para responder à sua solicitação pelo WhatsApp — por exemplo, para confirmar reservas de grupo, tirar dúvidas sobre o cardápio ou o funcionamento da casa. Não usamos seus dados para enviar e-mails promocionais ou compartilhá-los com terceiros para fins de marketing.</p>
-  </section>
-
-  <section>
-    <h2>3. Cookies</h2>
-    <p>Utilizamos um banner de consentimento de cookies que permite escolher quais categorias você aceita:</p>
-    <ul>
-      <li><strong>Necessário:</strong> essencial para o funcionamento do site (ex.: lembrar sua escolha de cookies). Não pode ser desativado.</li>
-      <li><strong>Funcional:</strong> ajuda a executar funcionalidades como compartilhamento em mídia social e recursos de terceiros.</li>
-      <li><strong>Analítico:</strong> usado para entender como os visitantes interagem com o site (páginas visitadas, taxa de rejeição).</li>
-      <li><strong>Desempenho:</strong> analisa índices de desempenho do site para oferecer melhor experiência.</li>
-      <li><strong>Publicidade:</strong> entregaria anúncios personalizados com base nas páginas visitadas, caso ativado.</li>
-    </ul>
-    <p>Você pode aceitar todos, rejeitar os opcionais ou personalizar suas preferências a qualquer momento clicando no link <strong>"Cookies"</strong> no rodapé do site. Sua escolha fica salva no seu navegador por até 12 meses.</p>
-  </section>
-
-  <section>
-    <h2>4. Compartilhamento de dados</h2>
-    <p>Não compartilhamos, vendemos ou alugamos seus dados pessoais a terceiros. Os dados do formulário de contato são recebidos diretamente pela equipe do Dedo de Moça Café da Roça via WhatsApp, para atendimento direto.</p>
-  </section>
-
-  <section>
-    <h2>5. Seus direitos (LGPD)</h2>
-    <p>Conforme a LGPD, você tem direito a:</p>
-    <ul>
-      <li>Confirmação da existência de tratamento de dados;</li>
-      <li>Acesso aos seus dados;</li>
-      <li>Correção de dados incompletos, inexatos ou desatualizados;</li>
-      <li>Anonimização, bloqueio ou eliminação de dados desnecessários;</li>
-      <li>Portabilidade dos dados a outro fornecedor de serviço;</li>
-      <li>Revogação do consentimento a qualquer momento.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>6. Segurança</h2>
-    <p>Os dados enviados pelo formulário de contato trafegam por conexão segura (HTTPS) e são recebidos diretamente pela equipe responsável, sem armazenamento em banco de dados próprio do site.</p>
-  </section>
-
-  <section>
-    <h2>7. Retenção de dados</h2>
-    <p>As preferências de cookies ficam armazenadas no seu navegador por até 12 meses ou até você limpá-las manualmente. As mensagens enviadas pelo formulário de contato são mantidas apenas pelo tempo necessário para o atendimento da sua solicitação.</p>
-  </section>
-
-  <section>
-    <h2>8. Menores de idade</h2>
-    <p>O site não coleta intencionalmente dados de menores de 18 anos sem o consentimento de um responsável legal.</p>
-  </section>
-
-  <section>
-    <h2>9. Contato e encarregado de dados</h2>
-    <p>Para exercer qualquer um dos seus direitos previstos na LGPD ou tirar dúvidas sobre esta política, entre em contato pelo WhatsApp <a href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20pol%C3%ADtica%20de%20privacidade." target="_blank" rel="noopener">(21) 98386-6213</a>.</p>
-  </section>
-
-  <a class="btn btn--ghost legal__voltar" href="/">← Voltar para o site</a>
-</main>
-
+<!-- ============================================================ -->
+<!-- MOBILE DRAWER -->
+<!-- ============================================================ -->
 <div class="drawer-overlay" id="drawerOverlay"></div>
 <div class="drawer" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
   <div class="drawer__head">
-    <img class="drawer__logo" src="assets/logo-dedo-de-moca-desktop.webp" alt="Dedo de Moça Café da Roça" />
+    <img class="drawer__logo" src="{{BASE}}assets/logo-dedo-de-moca-desktop.webp" alt="Dedo de Moça Café da Roça" />
     <button class="drawer__close" id="drawerClose" type="button" aria-label="Fechar menu"><span></span><span></span></button>
   </div>
   <nav class="drawer__links">
-    <a href="/#inicio">Início</a>
-    <a href="/#cardapio">Nossas Delícias</a>
-    <a href="/#sobre">Sobre</a>
-    <a href="/#depoimentos">Depoimentos</a>
-    <a href="/#contato">Contato</a>
+    <a href="{{BASE}}/#inicio">Início</a>
+    <a href="{{BASE}}/#cardapio">Nossas Delícias</a>
+    <a href="{{BASE}}/#sobre">Sobre</a>
+    <a href="{{BASE}}/#depoimentos">Depoimentos</a>
+    <a href="{{BASE}}/#contato">Contato</a>
   </nav>
   <div class="drawer__foot">
     <a class="btn btn--primary drawer__cta" href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20fazer%20uma%20reserva%20ou%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener">Falar no WhatsApp</a>
   </div>
 </div>
 
+<!-- ============================================================ -->
+<!-- FOOTER -->
+<!-- ============================================================ -->
 <footer class="rodape">
   <div class="rodape__grid">
     <div class="rodape__marca">
-      <img class="rodape__logo" src="assets/logo-dedo-de-moca-desktop-crop-outline.webp" alt="Dedo de Moça Café da Roça" />
+      <img class="rodape__logo" src="{{BASE}}assets/logo-dedo-de-moca-desktop-crop-outline.webp" alt="Dedo de Moça Café da Roça" />
       <p class="rodape__sobre">Cafeteria ao ar livre em Rio da Prata. Comida caseira, café coado e um teto de guarda-chuvas coloridos.</p>
       <div class="rodape__social">
         <a href="https://www.instagram.com/dedodemoca.daroca/" target="_blank" rel="noopener" aria-label="Instagram">
@@ -152,27 +81,27 @@
     <div>
       <p class="rodape__tit">Navegue</p>
       <div class="rodape__links">
-        <a href="/#cardapio">Cardápio</a>
-        <a href="/#espaco">O espaço</a>
-        <a href="/#sobre">Sobre</a>
-        <a href="/#faq">Dúvidas</a>
-        <a href="/#localizacao">Onde estamos</a>
+        <a href="{{BASE}}/#cardapio">Cardápio</a>
+        <a href="{{BASE}}/#espaco">O espaço</a>
+        <a href="{{BASE}}/#sobre">Sobre</a>
+        <a href="{{BASE}}/#faq">Dúvidas</a>
+        <a href="{{BASE}}/#localizacao">Onde estamos</a>
       </div>
     </div>
     <div>
       <p class="rodape__tit">Nossas delícias</p>
       <div class="rodape__links rodape__links--delicias">
-        <a href="/#cardapio">A mesa do café da manhã</a>
-        <a href="/#cardapio">Café coado no pano</a>
-        <a href="/#cardapio">Waffle da casa</a>
-        <a href="/#cardapio">Pão de queijo &amp; salgados</a>
-        <a href="/#cardapio">Cuscuz, aipim, bolinho de chuva</a>
+        <a href="{{BASE}}/#cardapio">A mesa do café da manhã</a>
+        <a href="{{BASE}}/#cardapio">Café coado no pano</a>
+        <a href="{{BASE}}/#cardapio">Waffle da casa</a>
+        <a href="{{BASE}}/#cardapio">Pão de queijo &amp; salgados</a>
+        <a href="{{BASE}}/#cardapio">Cuscuz, aipim, bolinho de chuva</a>
       </div>
     </div>
     <div>
       <p class="rodape__tit">Contato</p>
       <div class="rodape__links rodape__links--contato">
-        <!-- TODO: substituir "#" pela URL direta do perfil no Google Business -->
+        <!-- TODO: substituir "#" pela URL direta do perfil no Google Business (pendente desde a criação) -->
         <a href="#">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h14v5a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8z"/><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M6 2v2M10 2v2M14 2v2"/></svg>
           <span>Dedo de Moça café da roça</span>
@@ -201,15 +130,18 @@
           Cookies
         </a>
         <span style="margin: 0 8px;">|</span>
-        <a href="/termos-e-condicoes" style="text-decoration: none; color: inherit;">Termos e Condições</a>
+        <a href="{{BASE}}/termos-e-condicoes" style="text-decoration: none; color: inherit;">Termos e Condições</a>
         <span style="margin: 0 8px;">|</span>
-        <a href="/politica-de-privacidade" style="text-decoration: none; color: inherit;">Política de Privacidade</a>
+        <a href="{{BASE}}/politica-de-privacidade" style="text-decoration: none; color: inherit;">Política de Privacidade</a>
       </div>
     </span>
     <span>Desenvolvido por <a class="ag5" href="https://www.ag5agencia.com.br" target="_blank" rel="noopener">AG5 Agência</a></span>
   </div>
 </footer>
 
+<!-- ============================================================ -->
+<!-- COOKIE BANNER (LGPD) — Padrão AG5 -->
+<!-- ============================================================ -->
 <div id="ck-banner" class="ck-banner" role="dialog" aria-modal="true" aria-label="Aviso de cookies" aria-live="polite" aria-hidden="true">
     <div class="ck-banner__inner">
         <div class="ck-banner__content">
@@ -218,7 +150,7 @@
                 Utilizamos cookies para aprimorar sua experiência de navegação, exibir conteúdo
                 personalizado e analisar nosso tráfego. Ao clicar em <strong>"Aceitar todos"</strong>,
                 você concorda com nosso uso de cookies conforme nossa
-                <a href="/politica-de-privacidade" class="ck-banner__link">Política de Privacidade</a>.
+                <a href="{{BASE}}/politica-de-privacidade" class="ck-banner__link">Política de Privacidade</a>.
             </p>
         </div>
         <div class="ck-banner__actions">
@@ -332,9 +264,10 @@
     </div>
 </div>
 
-<!-- WhatsApp Premium Experience -->
+<!-- ============================================================ -->
+<!-- WHATSAPP PREMIUM (balão flutuante) -->
+<!-- ============================================================ -->
 <div class="wa-premium-container">
-  <!-- Balão de Mensagem Glassmorphism -->
   <div id="wa-message-bubble" class="wa-bubble">
     <button class="wa-close" id="wa-close-btn" aria-label="Fechar balão de mensagem">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="14" height="14" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
@@ -342,7 +275,7 @@
     <div class="wa-content">
       <div class="wa-header">
         <div class="wa-avatar-wrapper">
-          <img src="assets/logo-dedo-de-moca-mobile.webp" alt="Dedo de Moça Café da Roça" class="wa-avatar" width="48" height="48">
+          <img src="{{BASE}}assets/logo-dedo-de-moca-mobile.webp" alt="Dedo de Moça Café da Roça" class="wa-avatar" width="48" height="48">
         </div>
         <div class="wa-info">
           <span class="wa-name">Dedo de Moça Café da Roça</span>
@@ -357,7 +290,6 @@
     </div>
   </div>
 
-  <!-- Botão Flutuante Redondo -->
   <a href="https://wa.me/5521983866213?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20fazer%20uma%20reserva%20ou%20tirar%20uma%20d%C3%BAvida."
      class="wa-float-btn" target="_blank" rel="noopener noreferrer"
      id="wa-main-btn" aria-label="Fale conosco pelo WhatsApp">
@@ -368,8 +300,9 @@
   </a>
 </div>
 
-<script src="script.js" defer></script>
-<script src="cookie-banner.js" defer></script>
+<!-- ============================================================ -->
+<!-- SCRIPTS (ordem obrigatória) -->
+<!-- ============================================================ -->
+<script src="{{BASE}}script.js" defer></script>
+<script src="{{BASE}}cookie-banner.js" defer></script>
 <script src="https://control-blog.ag5agencia.site/r.js" data-c="dedo-de-moca" defer></script>
-</body>
-</html>
