@@ -11,17 +11,18 @@
 
   /* ---------- DADOS ---------- */
 
-  // ⚠️ PENDÊNCIA BLOQUEANTE: substituir pelos 8–12 depoimentos reais exportados
-  // do Google Business (nome, tempo, nota e texto integral).
+  // Avaliações reais exportadas do perfil do Google Business (nome, tempo e texto integral).
   const DEPOIMENTOS = [
-    { nome: 'Visitante no Google', texto: 'Expectativa superada: a comida, a música ambiente e a recepção. A Milagros nos atendeu com uma paciência e um carisma enormes. Voltarei com certeza.' },
-    { nome: 'Visitante no Google', texto: 'Fui três vezes no mesmo mês, com pessoas diferentes. Porção farta, prato bem apresentado, equipe simpática e preço acessível.' },
-    { nome: 'Depoimento pendente', texto: 'Espaço reservado para avaliação real do Google — exportar do perfil com nome, tempo e nota antes do deploy.' },
-    { nome: 'Depoimento pendente', texto: 'Espaço reservado para avaliação real do Google — exportar do perfil com nome, tempo e nota antes do deploy.' },
-    { nome: 'Depoimento pendente', texto: 'Espaço reservado para avaliação real do Google — exportar do perfil com nome, tempo e nota antes do deploy.' },
-    { nome: 'Depoimento pendente', texto: 'Espaço reservado para avaliação real do Google — exportar do perfil com nome, tempo e nota antes do deploy.' },
-    { nome: 'Depoimento pendente', texto: 'Espaço reservado para avaliação real do Google — exportar do perfil com nome, tempo e nota antes do deploy.' },
-    { nome: 'Depoimento pendente', texto: 'Espaço reservado para avaliação real do Google — exportar do perfil com nome, tempo e nota antes do deploy.' }
+    { nome: 'Julia Soares', tempo: '3 meses atrás', texto: 'Fui hoje mais cedo e gostei muito. A comida estava bem saborosa, o atendimento foi ótimo, principalmente da atendente Milagros, super educada e simpática. O ambiente é lindo e muito agradável.' },
+    { nome: 'Patrícia Larrubia', tempo: '2 meses atrás', texto: 'Amei a comida e o ambiente!! Sabor sem comparação!! O atendimento foi um pouco demorado devido à quantidade de pessoas, mas nada que prejudique a experiência no local maravilhoso.' },
+    { nome: 'Gabriela Rocha', tempo: '3 meses atrás', texto: 'O ambiente é muito lindo e aconchegante. Atendimento ótimo também. Comemos uma baguete de linguiça que estava ótima, quiche de damasco com brie excelente também.' },
+    { nome: 'Conrado Aquino', tempo: '7 meses atrás', texto: 'Pedi um pão de alho com frango, bolinho de chuva e suco de morango com maracujá. Estava tudo muito gostoso. O ambiente é muito agradável e a música ambiente é calma. Super recomendo!' },
+    { nome: 'Lidia Marques Guimaraes', tempo: '4 meses atrás', texto: 'Muito aconchegante, lindo, colorido e muito bem ornamentado. Atendimento impecável, as atendentes dão sugestões e explicam tudo direitinho. Gostinho de comida de vó.' },
+    { nome: 'Fabiana Brumano', tempo: '1 ano atrás', texto: 'Ambiente familiar e tranquilo, onde conseguimos conversar e sentir a paz que a natureza transmite. Destaque para o cappuccino Dedo de Moça com creme de avelã, uma experiência inesquecível.' },
+    { nome: 'Virgínia Sampaio', tempo: '7 meses atrás', texto: 'Um lugar aconchegante, música ambiente e uma colaboradora chamada Milagros, super simpática, educada e carismática. Um verdadeiro cantinho da roça. Super recomendo, café maravilhoso.' },
+    { nome: 'Adriana Azevedo', tempo: '5 meses atrás', texto: 'O espaço é muito acolhedor e bem aproveitado. Tem área kids e a natureza torna o ambiente ainda mais agradável. Comida boa e excelente atendimento.' },
+    { nome: 'Izabelly Santos', tempo: '4 meses atrás', texto: 'Tudo perfeito! A comida é uma delícia, os funcionários são atenciosos e fazem com que nos sintamos em casa. O ambiente é muito aconchegante, com música agradável e área kids.' },
+    { nome: 'Vilma Batista', tempo: '1 ano atrás', texto: 'Amei tudo: comida, atendimento e ambiente super acolhedor e bem decorado. A atendente Vanessa foi muito prestativa, apresentou todo o cardápio e nos atendeu muito bem.' }
   ];
 
   const FAQ = [
@@ -29,8 +30,7 @@
     { p: 'Funciona em dia de chuva?', r: 'Sim. O pátio é ao ar livre, mas os quiosques de sapê e as áreas cobertas garantem lugar seco. Em chuva muito forte, confirme pelo WhatsApp.' },
     { p: 'Pode levar pet?', r: 'Nosso espaço é aberto e recebe famílias com pets — mantenha na guia e por perto. Confirme pelo WhatsApp se for um grupo grande.' },
     { p: 'Tem estacionamento?', r: 'O estacionamento é na rua, gratuito. Nos fins de semana as vagas ficam disputadas depois das 10h — vale chegar cedo.' },
-    { p: 'Quais as formas de pagamento?', r: 'Aceitamos dinheiro, Pix e os principais cartões. Detalhes atualizados também no destaque "Pagamento" do Instagram.' },
-    { p: 'Qual o valor médio por pessoa?', r: 'Visitantes relatam algo entre R$ 40 e R$ 80 por pessoa, dependendo do que se pede. Cardápio caseiro, sem couvert.' }
+    { p: 'Quais as formas de pagamento?', r: 'Aceitamos dinheiro, Pix e os principais cartões. Detalhes atualizados também no destaque "Pagamento" do Instagram.' }
   ];
 
   /* ---------- NAVBAR + MENU MOBILE (Drawer) ---------- */
@@ -75,6 +75,18 @@
     $('#heroMedia').classList.add('is-in');
   });
 
+  /* ---------- SOM DO VÍDEO DA HERO ---------- */
+  const heroVideo = $('#heroVideo');
+  const heroSom = $('#heroSom');
+  if (heroVideo && heroSom) {
+    heroSom.addEventListener('click', () => {
+      heroVideo.muted = !heroVideo.muted;
+      const comSom = !heroVideo.muted;
+      heroSom.setAttribute('aria-pressed', String(comSom));
+      heroSom.setAttribute('aria-label', comSom ? 'Desativar som do vídeo' : 'Ativar som do vídeo');
+    });
+  }
+
   /* ---------- REVEALS (IntersectionObserver) ---------- */
   const revelar = new IntersectionObserver(
     (entradas) => {
@@ -94,16 +106,14 @@
     revelar.observe(el);
   });
 
-  /* ---------- SOBRE (foto + card sobreposto) ---------- */
-  // Observa a SEÇÃO (a foto começa com clip-path e nunca dispararia o observer)
+  /* ---------- SOBRE (moldura em arco) ---------- */
   const secSobre = $('.sobre');
   const sobre = new IntersectionObserver(
     (entradas) => {
       entradas.forEach((e) => {
         if (!e.isIntersecting) return;
         sobre.unobserve(e.target);
-        $('#sobreFoto').classList.add('is-in');
-        $('#sobreCard').classList.add('is-in');
+        $$('.sobre__media').forEach((el) => el.classList.add('is-in'));
       });
     },
     { threshold: 0.25 }
@@ -126,44 +136,22 @@
     });
   }
 
-  /* ---------- NOTA DO GOOGLE (contador + estrelas) ---------- */
-  const blocoGoogle = $('#googleBloco');
-  const notaEl = $('#notaNum');
-  const obsGoogle = new IntersectionObserver(
-    (entradas) => {
-      entradas.forEach((e) => {
-        if (!e.isIntersecting) return;
-        obsGoogle.unobserve(e.target);
-        $$('[data-star]', e.target).forEach((s, i) => {
-          s.style.transitionDelay = i * 80 + 'ms';
-          s.classList.add('is-in');
-        });
-        if (semMovimento) {
-          notaEl.textContent = '4,7';
-          return;
-        }
-        const t0 = performance.now();
-        const passo = (t) => {
-          const p = Math.min(1, (t - t0) / 1400);
-          const eased = 1 - Math.pow(2, -10 * p); // easeOutExpo
-          notaEl.textContent = (4.7 * eased).toFixed(1).replace('.', ',');
-          if (p < 1) requestAnimationFrame(passo);
-          else notaEl.textContent = '4,7';
-        };
-        requestAnimationFrame(passo);
-      });
-    },
-    { threshold: 0.5 }
-  );
-  if (blocoGoogle) obsGoogle.observe(blocoGoogle);
-
   /* ---------- DEPOIMENTOS (marquee em duas faixas) ---------- */
+  const iniciais = (nome) => nome.split(' ').slice(0, 2).map((p) => p[0]).join('').toUpperCase();
   const cartao = (d) => `
     <div class="depo__card">
       <p class="depo__aspas">&ldquo;</p>
       <p class="depo__txt">${d.texto}</p>
-      <p class="depo__nome">${d.nome}</p>
-      <p class="depo__estrelas">★★★★★</p>
+      <footer class="depo__rodape">
+        <span class="depo__avatar">${iniciais(d.nome)}</span>
+        <div class="depo__info">
+          <p class="depo__nome">${d.nome}</p>
+          <p class="depo__meta">
+            <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="#4285F4" d="M23.52 12.27c0-.85-.08-1.67-.22-2.45H12v4.63h6.48a5.54 5.54 0 01-2.4 3.63v3h3.89c2.28-2.1 3.55-5.2 3.55-8.81z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.07 7.94-2.92l-3.89-3c-1.08.73-2.46 1.16-4.05 1.16-3.11 0-5.75-2.1-6.69-4.92H1.3v3.09A12 12 0 0012 24z"/><path fill="#FBBC05" d="M5.31 14.32a7.2 7.2 0 010-4.64V6.59H1.3a12 12 0 000 10.82z"/><path fill="#EA4335" d="M12 4.75c1.76 0 3.34.6 4.59 1.8l3.44-3.44C17.94 1.19 15.24 0 12 0A12 12 0 001.3 6.59l4.01 3.09C6.25 6.86 8.89 4.75 12 4.75z"/></svg>
+            ${d.tempo}
+          </p>
+        </div>
+      </footer>
     </div>`;
   const montarFaixa = (el, lista) => {
     if (!el) return;
@@ -180,7 +168,11 @@
       (f, i) => `
       <div class="faq__item" data-faq="${i}">
         <button class="faq__btn" type="button" aria-expanded="false">
-          ${f.p}<span class="faq__icone">+</span>
+          <span class="faq__num">${String(i + 1).padStart(2, '0')}</span>
+          <span class="faq__pergunta">${f.p}</span>
+          <span class="faq__icone">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>
+          </span>
         </button>
         <div class="faq__resp"><p>${f.r}</p></div>
       </div>`
@@ -192,14 +184,33 @@
       btn.addEventListener('click', () => {
         const abrindo = !item.classList.contains('is-open');
         $$('.faq__item', lista).forEach((outro) => {
+          if (outro === item) return;
+          const outroResp = $('.faq__resp', outro);
           outro.classList.remove('is-open');
-          $('.faq__resp', outro).style.height = '0px';
+          outroResp.style.height = outroResp.scrollHeight + 'px';
+          outroResp.offsetHeight; // força reflow para registrar a altura atual antes de animar
+          outroResp.style.height = '0px';
           $('.faq__btn', outro).setAttribute('aria-expanded', 'false');
         });
+        if (!abrindo) {
+          item.classList.remove('is-open');
+          resp.style.height = resp.scrollHeight + 'px';
+          resp.offsetHeight; // força reflow para registrar a altura atual antes de animar
+          resp.style.height = '0px';
+          btn.setAttribute('aria-expanded', 'false');
+        }
         if (abrindo) {
           item.classList.add('is-open');
-          resp.style.height = resp.scrollHeight + 'px';
           btn.setAttribute('aria-expanded', 'true');
+          requestAnimationFrame(() => {
+            resp.style.height = resp.scrollHeight + 'px';
+          });
+          resp.addEventListener('transitionend', function onEnd(ev) {
+            if (ev.propertyName === 'height' && item.classList.contains('is-open')) {
+              resp.style.height = 'auto';
+            }
+          }, { once: true });
+          item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
         }
       });
     });
@@ -258,8 +269,33 @@
     $$('[data-reveal]').forEach((el) => el.classList.add('is-in'));
     $('.hero__title').classList.add('is-in');
     $('#heroMedia').classList.add('is-in');
-    $('#sobreFoto').classList.add('is-in');
-    $('#sobreCard').classList.add('is-in');
+    $$('.sobre__media').forEach((el) => el.classList.add('is-in'));
+  }
+
+  /* ---------- PARALLAX SUTIL — foto "Sobre a casa" ---------- */
+  if (!semMovimento) {
+    const sobreFoto = $('.sobre__foto');
+    const sobreSection = $('.sobre');
+    if (sobreFoto && sobreSection) {
+      let ticking = false;
+      const aplicarParallax = () => {
+        const r = sobreSection.getBoundingClientRect();
+        const vh = window.innerHeight;
+        if (r.bottom > 0 && r.top < vh) {
+          const progresso = (vh - r.top) / (vh + r.height);
+          const deslocamento = (progresso - 0.5) * 60;
+          sobreFoto.style.transform = `translateY(${deslocamento.toFixed(1)}px) scale(1.12)`;
+        }
+        ticking = false;
+      };
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(aplicarParallax);
+          ticking = true;
+        }
+      }, { passive: true });
+      aplicarParallax();
+    }
   }
 
   aoRolar();
